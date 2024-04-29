@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		747CEA4E0B02A7CE70F4B1F1 /* Pods_NetworkScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D6B4940FD9D09AF5D3381E /* Pods_NetworkScanner.framework */; };
+		AE27FA412BD82BE0002FC0C9 /* DeviceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE27FA402BD82BE0002FC0C9 /* DeviceUseCase.swift */; };
+		AE27FA452BD8381C002FC0C9 /* WifiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE27FA442BD8381C002FC0C9 /* WifiTableViewCell.swift */; };
+		AE334D702BE268EB00DF4FA0 /* DeviceInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE334D6F2BE268EB00DF4FA0 /* DeviceInfoTableViewCell.swift */; };
+		AE35F1D62BD24E920006C7F5 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35F1D52BD24E920006C7F5 /* UIStackView+Extension.swift */; };
+		AE35F1DA2BD25EE70006C7F5 /* ScannersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35F1D92BD25EE70006C7F5 /* ScannersCollectionViewCell.swift */; };
+		AE35F1DC2BD263D30006C7F5 /* ScannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35F1DB2BD263D30006C7F5 /* ScannerModel.swift */; };
+		AE35F1E02BD264400006C7F5 /* ScannerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35F1DF2BD264400006C7F5 /* ScannerUseCase.swift */; };
+		AE38EB222BE3E10E00E5E936 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE38EB212BE3E10E00E5E936 /* BackButton.swift */; };
+		AE3D55522BE1572A00F96F00 /* scaningAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = AE3D55512BE1572A00F96F00 /* scaningAnimation.json */; };
+		AE43CEB22BD501B0000EBDD4 /* WifiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43CEB12BD501B0000EBDD4 /* WifiListViewController.swift */; };
+		AE43CEB42BD501C1000EBDD4 /* WifiListIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43CEB32BD501C1000EBDD4 /* WifiListIO.swift */; };
+		AE43CEB62BD501D2000EBDD4 /* WifiListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43CEB52BD501D2000EBDD4 /* WifiListViewModel.swift */; };
+		AE43CEBA2BD53142000EBDD4 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43CEB92BD53142000EBDD4 /* DeviceModel.swift */; };
+		AE43CEBD2BD5387F000EBDD4 /* ConnectionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43CEBC2BD5387F000EBDD4 /* ConnectionTypes.swift */; };
+		AE4AD9062BD0FC0A00D654E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD9052BD0FC0A00D654E5 /* AppDelegate.swift */; };
+		AE4AD9082BD0FC0A00D654E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD9072BD0FC0A00D654E5 /* SceneDelegate.swift */; };
+		AE4AD90A2BD0FC0A00D654E5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD9092BD0FC0A00D654E5 /* MainViewController.swift */; };
+		AE4AD90F2BD0FC0B00D654E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4AD90E2BD0FC0B00D654E5 /* Assets.xcassets */; };
+		AE4AD9122BD0FC0B00D654E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4AD9102BD0FC0B00D654E5 /* LaunchScreen.storyboard */; };
+		AE4AD91D2BD1073E00D654E5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD91C2BD1073E00D654E5 /* Coordinator.swift */; };
+		AE4AD91F2BD1075200D654E5 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD91E2BD1075200D654E5 /* Assembly.swift */; };
+		AE4AD9222BD1098D00D654E5 /* MainIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD9212BD1098D00D654E5 /* MainIO.swift */; };
+		AE4AD9242BD109E400D654E5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD9232BD109E400D654E5 /* MainViewModel.swift */; };
+		AE4AD9272BD10CDF00D654E5 /* MagneticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD9262BD10CDF00D654E5 /* MagneticViewController.swift */; };
+		AE4AD9292BD10CFF00D654E5 /* MagneticIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD9282BD10CFF00D654E5 /* MagneticIO.swift */; };
+		AE4AD92B2BD10D1900D654E5 /* MagneticViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD92A2BD10D1900D654E5 /* MagneticViewModel.swift */; };
+		AE4AD92D2BD1196B00D654E5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4AD92C2BD1196B00D654E5 /* Colors.xcassets */; };
+		AE4AD9352BD1426F00D654E5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD9342BD1426F00D654E5 /* R.generated.swift */; };
+		AE4AD9382BD14CCC00D654E5 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD9372BD14CCC00D654E5 /* UIView+Extension.swift */; };
+		AE4AD93B2BD1644400D654E5 /* WifiScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD93A2BD1644400D654E5 /* WifiScanView.swift */; };
+		AE4FF8C82BD3FE31002798B0 /* WifiDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4FF8C72BD3FE31002798B0 /* WifiDetectionViewController.swift */; };
+		AE4FF8CA2BD3FE60002798B0 /* WifiWifiDetectionIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4FF8C92BD3FE60002798B0 /* WifiWifiDetectionIO.swift */; };
+		AE4FF8CC2BD3FE9D002798B0 /* WifiDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4FF8CB2BD3FE9D002798B0 /* WifiDetectionViewModel.swift */; };
+		AE59ABFA2BDAB4D100A8277E /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE59ABF92BDAB4D100A8277E /* DeviceViewController.swift */; };
+		AE59ABFC2BDAB4E400A8277E /* DeviceIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE59ABFB2BDAB4E400A8277E /* DeviceIO.swift */; };
+		AE59ABFE2BDAB53000A8277E /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE59ABFD2BDAB53000A8277E /* DeviceViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		265A8976F02982110C7763AA /* Pods-NetworkScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkScanner.debug.xcconfig"; path = "Target Support Files/Pods-NetworkScanner/Pods-NetworkScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		47D6B4940FD9D09AF5D3381E /* Pods_NetworkScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE27FA402BD82BE0002FC0C9 /* DeviceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUseCase.swift; sourceTree = "<group>"; };
+		AE27FA442BD8381C002FC0C9 /* WifiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiTableViewCell.swift; sourceTree = "<group>"; };
+		AE334D6F2BE268EB00DF4FA0 /* DeviceInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoTableViewCell.swift; sourceTree = "<group>"; };
+		AE35F1D52BD24E920006C7F5 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		AE35F1D92BD25EE70006C7F5 /* ScannersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannersCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE35F1DB2BD263D30006C7F5 /* ScannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerModel.swift; sourceTree = "<group>"; };
+		AE35F1DF2BD264400006C7F5 /* ScannerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerUseCase.swift; sourceTree = "<group>"; };
+		AE38EB212BE3E10E00E5E936 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		AE3D55512BE1572A00F96F00 /* scaningAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scaningAnimation.json; sourceTree = "<group>"; };
+		AE43CEB12BD501B0000EBDD4 /* WifiListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiListViewController.swift; sourceTree = "<group>"; };
+		AE43CEB32BD501C1000EBDD4 /* WifiListIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiListIO.swift; sourceTree = "<group>"; };
+		AE43CEB52BD501D2000EBDD4 /* WifiListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiListViewModel.swift; sourceTree = "<group>"; };
+		AE43CEB92BD53142000EBDD4 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
+		AE43CEBC2BD5387F000EBDD4 /* ConnectionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionTypes.swift; sourceTree = "<group>"; };
+		AE4AD9022BD0FC0A00D654E5 /* NetworkScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4AD9052BD0FC0A00D654E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE4AD9072BD0FC0A00D654E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE4AD9092BD0FC0A00D654E5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AE4AD90E2BD0FC0B00D654E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE4AD9112BD0FC0B00D654E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE4AD9132BD0FC0B00D654E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4AD91C2BD1073E00D654E5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AE4AD91E2BD1075200D654E5 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		AE4AD9212BD1098D00D654E5 /* MainIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIO.swift; sourceTree = "<group>"; };
+		AE4AD9232BD109E400D654E5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		AE4AD9262BD10CDF00D654E5 /* MagneticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticViewController.swift; sourceTree = "<group>"; };
+		AE4AD9282BD10CFF00D654E5 /* MagneticIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticIO.swift; sourceTree = "<group>"; };
+		AE4AD92A2BD10D1900D654E5 /* MagneticViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticViewModel.swift; sourceTree = "<group>"; };
+		AE4AD92C2BD1196B00D654E5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		AE4AD9342BD1426F00D654E5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		AE4AD9372BD14CCC00D654E5 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AE4AD93A2BD1644400D654E5 /* WifiScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiScanView.swift; sourceTree = "<group>"; };
+		AE4FF8C72BD3FE31002798B0 /* WifiDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiDetectionViewController.swift; sourceTree = "<group>"; };
+		AE4FF8C92BD3FE60002798B0 /* WifiWifiDetectionIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiWifiDetectionIO.swift; sourceTree = "<group>"; };
+		AE4FF8CB2BD3FE9D002798B0 /* WifiDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiDetectionViewModel.swift; sourceTree = "<group>"; };
+		AE59ABF92BDAB4D100A8277E /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		AE59ABFB2BDAB4E400A8277E /* DeviceIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIO.swift; sourceTree = "<group>"; };
+		AE59ABFD2BDAB53000A8277E /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
+		B9D664B2C2F6C7A02048CBB5 /* Pods-NetworkScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkScanner.release.xcconfig"; path = "Target Support Files/Pods-NetworkScanner/Pods-NetworkScanner.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE4AD8FF2BD0FC0A00D654E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747CEA4E0B02A7CE70F4B1F1 /* Pods_NetworkScanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DC234FC4375B105668ECE42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				265A8976F02982110C7763AA /* Pods-NetworkScanner.debug.xcconfig */,
+				B9D664B2C2F6C7A02048CBB5 /* Pods-NetworkScanner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		998693FE4BEAAD026FBEE6CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47D6B4940FD9D09AF5D3381E /* Pods_NetworkScanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE35F1D72BD2501C0006C7F5 /* WifiDetection */ = {
+			isa = PBXGroup;
+			children = (
+				AE3D55512BE1572A00F96F00 /* scaningAnimation.json */,
+				AE4FF8C72BD3FE31002798B0 /* WifiDetectionViewController.swift */,
+				AE4FF8C92BD3FE60002798B0 /* WifiWifiDetectionIO.swift */,
+				AE4FF8CB2BD3FE9D002798B0 /* WifiDetectionViewModel.swift */,
+			);
+			path = WifiDetection;
+			sourceTree = "<group>";
+		};
+		AE35F1DD2BD263DA0006C7F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE35F1DB2BD263D30006C7F5 /* ScannerModel.swift */,
+				AE43CEB92BD53142000EBDD4 /* DeviceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE35F1DE2BD264250006C7F5 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				AE35F1DF2BD264400006C7F5 /* ScannerUseCase.swift */,
+				AE27FA402BD82BE0002FC0C9 /* DeviceUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		AE3F91342BD98BF900643888 /* DeviceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				AE59ABF92BDAB4D100A8277E /* DeviceViewController.swift */,
+				AE59ABFB2BDAB4E400A8277E /* DeviceIO.swift */,
+				AE59ABFD2BDAB53000A8277E /* DeviceViewModel.swift */,
+				AE334D6F2BE268EB00DF4FA0 /* DeviceInfoTableViewCell.swift */,
+			);
+			path = DeviceDetails;
+			sourceTree = "<group>";
+		};
+		AE43CEB02BD50158000EBDD4 /* WifiList */ = {
+			isa = PBXGroup;
+			children = (
+				AE43CEB12BD501B0000EBDD4 /* WifiListViewController.swift */,
+				AE43CEB32BD501C1000EBDD4 /* WifiListIO.swift */,
+				AE43CEB52BD501D2000EBDD4 /* WifiListViewModel.swift */,
+				AE27FA442BD8381C002FC0C9 /* WifiTableViewCell.swift */,
+			);
+			path = WifiList;
+			sourceTree = "<group>";
+		};
+		AE43CEBB2BD53863000EBDD4 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AE43CEBC2BD5387F000EBDD4 /* ConnectionTypes.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		AE4AD8F92BD0FC0A00D654E5 = {
+			isa = PBXGroup;
+			children = (
+				AE4AD9042BD0FC0A00D654E5 /* NetworkScanner */,
+				AE4AD9032BD0FC0A00D654E5 /* Products */,
+				5DC234FC4375B105668ECE42 /* Pods */,
+				998693FE4BEAAD026FBEE6CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE4AD9032BD0FC0A00D654E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AD9022BD0FC0A00D654E5 /* NetworkScanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE4AD9042BD0FC0A00D654E5 /* NetworkScanner */ = {
+			isa = PBXGroup;
+			children = (
+				AE43CEBB2BD53863000EBDD4 /* Enums */,
+				AE35F1DE2BD264250006C7F5 /* UseCase */,
+				AE35F1DD2BD263DA0006C7F5 /* Models */,
+				AE4AD9392BD163A200D654E5 /* UIComponents */,
+				AE4AD9362BD14CB100D654E5 /* Extensions */,
+				AE4AD91B2BD106FC00D654E5 /* Modules */,
+				AE4AD91A2BD106A500D654E5 /* Resources */,
+				AE4AD9052BD0FC0A00D654E5 /* AppDelegate.swift */,
+				AE4AD9072BD0FC0A00D654E5 /* SceneDelegate.swift */,
+				AE4AD9132BD0FC0B00D654E5 /* Info.plist */,
+			);
+			path = NetworkScanner;
+			sourceTree = "<group>";
+		};
+		AE4AD91A2BD106A500D654E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AD9342BD1426F00D654E5 /* R.generated.swift */,
+				AE4AD9102BD0FC0B00D654E5 /* LaunchScreen.storyboard */,
+				AE4AD90E2BD0FC0B00D654E5 /* Assets.xcassets */,
+				AE4AD92C2BD1196B00D654E5 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE4AD91B2BD106FC00D654E5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AD91E2BD1075200D654E5 /* Assembly.swift */,
+				AE4AD91C2BD1073E00D654E5 /* Coordinator.swift */,
+				AE3F91342BD98BF900643888 /* DeviceDetails */,
+				AE43CEB02BD50158000EBDD4 /* WifiList */,
+				AE35F1D72BD2501C0006C7F5 /* WifiDetection */,
+				AE4AD9252BD10C8C00D654E5 /* MagneticDetection */,
+				AE4AD9202BD1096C00D654E5 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AE4AD9202BD1096C00D654E5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AD9092BD0FC0A00D654E5 /* MainViewController.swift */,
+				AE4AD9212BD1098D00D654E5 /* MainIO.swift */,
+				AE4AD9232BD109E400D654E5 /* MainViewModel.swift */,
+				AE35F1D92BD25EE70006C7F5 /* ScannersCollectionViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AE4AD9252BD10C8C00D654E5 /* MagneticDetection */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AD9262BD10CDF00D654E5 /* MagneticViewController.swift */,
+				AE4AD9282BD10CFF00D654E5 /* MagneticIO.swift */,
+				AE4AD92A2BD10D1900D654E5 /* MagneticViewModel.swift */,
+			);
+			path = MagneticDetection;
+			sourceTree = "<group>";
+		};
+		AE4AD9362BD14CB100D654E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AD9372BD14CCC00D654E5 /* UIView+Extension.swift */,
+				AE35F1D52BD24E920006C7F5 /* UIStackView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE4AD9392BD163A200D654E5 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AE4AD93A2BD1644400D654E5 /* WifiScanView.swift */,
+				AE38EB212BE3E10E00E5E936 /* BackButton.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE4AD9012BD0FC0A00D654E5 /* NetworkScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4AD9162BD0FC0B00D654E5 /* Build configuration list for PBXNativeTarget "NetworkScanner" */;
+			buildPhases = (
+				3CC6CC6776494F9BE4FDF9DE /* [CP] Check Pods Manifest.lock */,
+				AE4AD9192BD0FDDE00D654E5 /* ShellScript */,
+				AE4AD8FE2BD0FC0A00D654E5 /* Sources */,
+				AE4AD8FF2BD0FC0A00D654E5 /* Frameworks */,
+				AE4AD9002BD0FC0A00D654E5 /* Resources */,
+				C0AC30F88D0F3B5427BE9C48 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkScanner;
+			productName = NetworkScanner;
+			productReference = AE4AD9022BD0FC0A00D654E5 /* NetworkScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE4AD8FA2BD0FC0A00D654E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AE4AD9012BD0FC0A00D654E5 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AE4AD8FD2BD0FC0A00D654E5 /* Build configuration list for PBXProject "NetworkScanner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE4AD8F92BD0FC0A00D654E5;
+			productRefGroup = AE4AD9032BD0FC0A00D654E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE4AD9012BD0FC0A00D654E5 /* NetworkScanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE4AD9002BD0FC0A00D654E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4AD92D2BD1196B00D654E5 /* Colors.xcassets in Resources */,
+				AE4AD9122BD0FC0B00D654E5 /* LaunchScreen.storyboard in Resources */,
+				AE4AD90F2BD0FC0B00D654E5 /* Assets.xcassets in Resources */,
+				AE3D55522BE1572A00F96F00 /* scaningAnimation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CC6CC6776494F9BE4FDF9DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkScanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE4AD9192BD0FDDE00D654E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/NetworkScanner/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/NetworkScanner/Resources/R.generated.swift\"\n";
+		};
+		C0AC30F88D0F3B5427BE9C48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkScanner/Pods-NetworkScanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkScanner/Pods-NetworkScanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkScanner/Pods-NetworkScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE4AD8FE2BD0FC0A00D654E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4AD9242BD109E400D654E5 /* MainViewModel.swift in Sources */,
+				AE4FF8C82BD3FE31002798B0 /* WifiDetectionViewController.swift in Sources */,
+				AE59ABFC2BDAB4E400A8277E /* DeviceIO.swift in Sources */,
+				AE43CEB42BD501C1000EBDD4 /* WifiListIO.swift in Sources */,
+				AE27FA452BD8381C002FC0C9 /* WifiTableViewCell.swift in Sources */,
+				AE59ABFA2BDAB4D100A8277E /* DeviceViewController.swift in Sources */,
+				AE59ABFE2BDAB53000A8277E /* DeviceViewModel.swift in Sources */,
+				AE35F1DA2BD25EE70006C7F5 /* ScannersCollectionViewCell.swift in Sources */,
+				AE35F1D62BD24E920006C7F5 /* UIStackView+Extension.swift in Sources */,
+				AE43CEB22BD501B0000EBDD4 /* WifiListViewController.swift in Sources */,
+				AE4AD93B2BD1644400D654E5 /* WifiScanView.swift in Sources */,
+				AE4FF8CC2BD3FE9D002798B0 /* WifiDetectionViewModel.swift in Sources */,
+				AE35F1E02BD264400006C7F5 /* ScannerUseCase.swift in Sources */,
+				AE43CEB62BD501D2000EBDD4 /* WifiListViewModel.swift in Sources */,
+				AE43CEBA2BD53142000EBDD4 /* DeviceModel.swift in Sources */,
+				AE27FA412BD82BE0002FC0C9 /* DeviceUseCase.swift in Sources */,
+				AE4FF8CA2BD3FE60002798B0 /* WifiWifiDetectionIO.swift in Sources */,
+				AE4AD91D2BD1073E00D654E5 /* Coordinator.swift in Sources */,
+				AE4AD91F2BD1075200D654E5 /* Assembly.swift in Sources */,
+				AE4AD90A2BD0FC0A00D654E5 /* MainViewController.swift in Sources */,
+				AE4AD92B2BD10D1900D654E5 /* MagneticViewModel.swift in Sources */,
+				AE35F1DC2BD263D30006C7F5 /* ScannerModel.swift in Sources */,
+				AE334D702BE268EB00DF4FA0 /* DeviceInfoTableViewCell.swift in Sources */,
+				AE38EB222BE3E10E00E5E936 /* BackButton.swift in Sources */,
+				AE4AD9062BD0FC0A00D654E5 /* AppDelegate.swift in Sources */,
+				AE4AD9382BD14CCC00D654E5 /* UIView+Extension.swift in Sources */,
+				AE43CEBD2BD5387F000EBDD4 /* ConnectionTypes.swift in Sources */,
+				AE4AD9292BD10CFF00D654E5 /* MagneticIO.swift in Sources */,
+				AE4AD9222BD1098D00D654E5 /* MainIO.swift in Sources */,
+				AE4AD9272BD10CDF00D654E5 /* MagneticViewController.swift in Sources */,
+				AE4AD9352BD1426F00D654E5 /* R.generated.swift in Sources */,
+				AE4AD9082BD0FC0A00D654E5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE4AD9102BD0FC0B00D654E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE4AD9112BD0FC0B00D654E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE4AD9142BD0FC0B00D654E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE4AD9152BD0FC0B00D654E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE4AD9172BD0FC0B00D654E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 265A8976F02982110C7763AA /* Pods-NetworkScanner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3N2W4FTQR5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkScanner/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varitski.NetworkScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE4AD9182BD0FC0B00D654E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9D664B2C2F6C7A02048CBB5 /* Pods-NetworkScanner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3N2W4FTQR5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkScanner/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.varitski.NetworkScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE4AD8FD2BD0FC0A00D654E5 /* Build configuration list for PBXProject "NetworkScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4AD9142BD0FC0B00D654E5 /* Debug */,
+				AE4AD9152BD0FC0B00D654E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4AD9162BD0FC0B00D654E5 /* Build configuration list for PBXNativeTarget "NetworkScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4AD9172BD0FC0B00D654E5 /* Debug */,
+				AE4AD9182BD0FC0B00D654E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE4AD8FA2BD0FC0A00D654E5 /* Project object */;
+}
